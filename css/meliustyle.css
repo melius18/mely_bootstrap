@@ -1,0 +1,65 @@
+/* https://www.youtube.com/watch?v=JH1UirUO1jA&index=5&list=PLRx0vPvlEmdAZ-wT8pwVJn5GBp5a5aVGy */
+/* all area */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+    font-family: 'Nanum Gothic';
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* nav area */
+.navbar-default { /* background color */
+    background-color: #000000;
+    border-color: #000000;
+}
+.navbar-default .navbar-brand { /* title color */
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: transparent;
+    color: #bbbbbb;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { /* active nav menu */
+    color: white;
+    background-color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus { /* all nav menu */
+    color: #bbbbbb;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus { /* nav menu when opening dropdown */
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+@media (max-width: 767px) { /* when small screen */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #bbbbbb;
+    }
+}
